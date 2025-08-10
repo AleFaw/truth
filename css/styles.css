@@ -77,13 +77,11 @@ section > .position-relative div {
   text-align: center;
 }
 
-/* Imagen del curso */
 .contenedor-cursos img {
   border-radius: 8px;
   margin: 15px 0;
 }
 
-/* Título del curso */
 .contenedor-cursos h3 {
   font-size: 1.3rem;
   margin: 0;
@@ -94,7 +92,6 @@ section > .position-relative div {
   border-radius: 8px 8px 0 0;
 }
 
-/* Texto del curso */
 .contenedor-cursos p {
   font-size: 0.95rem;
   margin: 0;
@@ -106,97 +103,40 @@ section > .position-relative div {
 
 /*CSS DE EVENTOS*/
 
-#detalle-evento {
-  flex-direction: column; 
-  padding: 20px;
+.contenedor-calendario {
+  color: black;
+  max-width: 600px;
 }
 
-.contenedor-evento {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  border-style: groove;
-  border-radius: 20px;
-  border-color: rgb(255, 255, 255);
-  background-color: rgb(5,34,55,255);
-  color: white;
-  margin-bottom: 30px;
+.resaltado {
+  background-color: #d1f0ec !important;
 }
 
-.contenedor-evento img {
-  width: 500px;
-  height: 200px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  border-style: groove;
-}
-
-.contenido-evento {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  
+.calendario-header button[disabled] {
+  cursor: not-allowed;
 }
 
 .contenedor-evento h3 {
-  font-size: 24px;
-  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+  max-width: 900px;
 }
 
 .contenedor-evento p {
-  margin: 0;
   font-size: 1rem;
 }
 
-    .contenedor-calendario {
-      max-width: 600px;
-      width: 100%;
-      background: white;
-      margin: 40px auto;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .calendario-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-    .calendario-header button {
-      padding: 5px 10px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: not-allowed;
-    }
-    .calendario-header span {
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      width: 14.28%;
-      padding: 10px;
-      text-align: center;
-      border: 1px solid #ddd;
-    }
-    th {
-      background-color: #e0f0f0;
-    }
-    td:hover {
-      background-color: #f1f1f1;
-      cursor: pointer;
-    }
-    .resaltado {
-      background-color: #d1f0ec;
-    }
+.contenedor-evento{
+  max-width: 900px;
+  background-color:rgba(5,34,55,255);
+}
 
-    /*CSS CONTACTO*/
+@media (max-width: 767.98px) {
+  .contenedor-evento img {
+    height: auto !important;
+  }
+}
+
+/*CSS CONTACTO*/
 
     .contacto {
       background-image: url(../assets/img/fondo-contacto.png);
