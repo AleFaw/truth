@@ -112,7 +112,7 @@ section > .position-relative div {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow-x: auto; /* agrega scroll horizontal en pantallas muy pequeñas */
+  overflow-x: auto; 
 }
 
 .resaltado {
@@ -126,17 +126,16 @@ section > .position-relative div {
 table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* columnas igual ancho */
+  table-layout: fixed; 
 }
 
 th, td {
-  width: 16.66%; /* 6 columnas, 100/6 ≈ 16.66% */
+  width: 16.66%;
   padding: 10px;
   text-align: center;
   border: 1px solid #ddd;
-  word-wrap: break-word; /* para que el texto largo no rompa layout */
+  word-wrap: break-word; 
 }
-
 
 .contenedor-evento h3 {
   font-size: 1.8rem;
@@ -165,60 +164,35 @@ th, td {
 
 /*CSS CONTACTO*/
 
-    .contacto {
-      background-image: url(../assets/img/fondo-contacto.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      min-height: 79vh; /*Aprox lo puse así para que quede la imagen en un tamaño lindo*/
-      padding: 20px;
-    }
+.contacto {
+  background-image: url(../assets/img/fondo-contacto.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 79vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
-    .contacto h1{
-      color: white;
-      margin-bottom: 100px;
-    }
+.contacto h1 {
+  color: white;
+}
 
-    .formulario-contacto {
-      max-width: 900px;
-      margin: auto;
-      background-color: #f3f6f8;
-      border: 1px solid #b8c0c8;
-      padding: 30px;
-      display: flex;
-      gap: 40px;
-    }
-    .formulario-contacto div {
-      flex: 1;
-    }
-    .formulario-contacto label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    .formulario-contacto input[type="text"],
-    .formulario-contacto input[type="email"],
-    .formulario-contacto textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
-    .formulario-contacto textarea {
-      height: 100px;
-      resize: none;
-    }
-    .formulario-contacto .boton-enviar {
-      margin-top: 10px;
-      padding: 8px 16px;
-      background-color: #3a4b5c;
-      color: white;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-    .formulario-contacto .radio-group label {
-      margin-right: 15px;
-    }
+.formulario-contacto {
+  max-width:900px;
+}
+
+.formulario-contacto label {
+  font-weight: 600;
+}
+
+textarea {
+  resize: none;
+}
+
+@media (max-width: 767.98px) {
+  .formulario-contacto {
+    padding: 20px !important;
+  }
+}
