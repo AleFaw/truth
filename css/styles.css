@@ -149,6 +149,8 @@ th, td {
 .contenedor-evento{
   max-width: 900px;
   background-color:rgba(5,34,55,255);
+  object-fit: cover; 
+  width: 100%;
 }
 
 @media (max-width: 767.98px) {
@@ -191,8 +193,24 @@ textarea {
   resize: none;
 }
 
+main {
+  padding-top: 70px; /* espacio para header en desktop */
+  padding-bottom: 100px; /* espacio para footer en desktop */
+}
+
 @media (max-width: 767.98px) {
   .formulario-contacto {
     padding: 20px !important;
+  }
+
+  iframe {
+    width: 100% !important;
+    max-width: 600px;
+    height: 250px !important;
+  }
+
+  main {
+    padding-top: 90px; /* más espacio en móviles */
+    padding-bottom: 120px; /* más espacio para el footer en móvil */
   }
 }
