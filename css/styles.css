@@ -98,6 +98,12 @@ section > .position-relative div {
   max-height: 170px;
   border-radius: 20px;
   object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  #noticias .d-flex.p-3 { padding: 0.75rem; }
+  .noticia-img { max-width: 300px; }
 }
 
 /*CSS DE CURSOS*/
