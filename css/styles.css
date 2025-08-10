@@ -1,190 +1,43 @@
-/*Link de google fonts para utilizarla*/
+
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
 
-/*Configuración inicial recomendada por la profe*/
-*{
-    margin:0;
+/*CSS GENERAL*/
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*CSS General a todas las vistas*/
-h1{
-    text-align: center;
-    margin-bottom: 25px;
-}
-
 html, body {
     height: 100%;
-    font-family: tektur;
+    font-family: tektur, sans-serif;
+    background-color: #9ab2b18a;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color:  #9ab2b18a;
+/*CSS HEADER Y FOOTER*/
+#header, #footer{
+  background-color:rgba(5,34,55,255);
 }
 
-main {
-  flex: 1;
+/*CSS INDEX*/
+#quienes_somos, #vision {
+    background-color: rgba(5, 34, 55, 255);
+    color: white;
+    border-radius: 8px;
 }
 
-
-/* CSS DE HEADER*/
-
-header{
-    position: sticky;
-     top: 0;
-    z-index: 1000; /* Esto lo busque y puse para que el menú quede por encima cuando se comporta como sticky */
-}
-.logo{
-    display:block;
-    height: 100px;
-    width: 100px;
-    position:static;
-}
-
-.logo img{
-    width: 100%;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:rgba(5,34,55,255);
-    padding: 0 50px;
-    margin-bottom: 10px;
-}
-
-.menu{
-    display:flex;
-    flex-wrap: nowrap;
-    align-content: flex-end;
-}
-
-.menu ul {
-    font-size: 20px;
-    display: flex;
-    list-style: none;
-    gap: 50px;
-    align-items: stretch;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-.menu a {
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    padding: 8px 24px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    width: 150px;
+.subscribirse p {
+    margin-bottom: 8px;
     text-align: center;
 }
 
-/* CSS DE FOOTER*/
-
-.footer-container{
-    margin-bottom: 0px;
-    align-items: center;
-    background-color:rgba(5,34,55,255);
-    display: flex;
-    justify-content: space-between;
-}
-
-.social ul{
-    font-size: 20px;
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.social i{
-    margin-right: 15px;
-}
-
-.social a{
-    display:inline-block;
-    text-decoration: none;
-    color:white;
-    padding: 8px 24px;
-    text-align: center;
-}
-
-.subscribirse{
-    color:white;
-    font-size: 20px;
-    text-align:center;
-    margin-right: 100px;
-    padding:10px;
-}
-
-/* CSS INDEX */
-
-#quienes_somos {
-    width: 100%;
-    background-color: rgba(5,34,55,255);
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    color: white;
-}
-
-
-#quienes_somos img {
-    height: 300px;
-    width: auto;
-    flex-shrink: 0;
-}
-
-
-.texto {
-    flex: 1;
-}
-
-.texto h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.texto p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-#vision{
-    margin-top:30px;
-    width: 100%;
-    background-color: rgba(5,34,55,255);
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    color: white;
-}
-
-#vision img {
-    height: 300px;
-    width: auto;
-    flex-shrink: 0;
+@media (max-width: 768px) {
+    #quienes_somos, #vision {
+        text-align: center;
     }
-
-.texto2 {
-    flex: 1;
-    margin-left:40px;
-}
-
-.texto2 h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.texto2 p {
-    font-size: 18px;
-    line-height: 1.6;
+    #quienes_somos img, #vision img {
+        height: auto;
+    }
 }
 
 /*CSS DE NOVEDADES*/
