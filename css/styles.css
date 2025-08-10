@@ -1,0 +1,469 @@
+/*Link de google fonts para utilizarla*/
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+/*Configuración inicial recomendada por la profe*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS General a todas las vistas*/
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+html, body {
+    height: 100%;
+    font-family: tektur;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color:  #9ab2b18a;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* CSS DE HEADER*/
+
+header{
+    position: sticky;
+     top: 0;
+    z-index: 1000; /* Esto lo busque y puse para que el menú quede por encima cuando se comporta como sticky */
+}
+.logo{
+    display:block;
+    height: 100px;
+    width: 100px;
+    position:static;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(5,34,55,255);
+    padding: 0 50px;
+    margin-bottom: 10px;
+}
+
+.menu{
+    display:flex;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+}
+
+.menu ul {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 8px 24px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+/* CSS DE FOOTER*/
+
+.footer-container{
+    margin-bottom: 0px;
+    align-items: center;
+    background-color:rgba(5,34,55,255);
+    display: flex;
+    justify-content: space-between;
+}
+
+.social ul{
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.social i{
+    margin-right: 15px;
+}
+
+.social a{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    padding: 8px 24px;
+    text-align: center;
+}
+
+.subscribirse{
+    color:white;
+    font-size: 20px;
+    text-align:center;
+    margin-right: 100px;
+    padding:10px;
+}
+
+/* CSS INDEX */
+
+#quienes_somos {
+    width: 100%;
+    background-color: rgba(5,34,55,255);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: white;
+}
+
+
+#quienes_somos img {
+    height: 300px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+
+.texto {
+    flex: 1;
+}
+
+.texto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#vision{
+    margin-top:30px;
+    width: 100%;
+    background-color: rgba(5,34,55,255);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: white;
+}
+
+#vision img {
+    height: 300px;
+    width: auto;
+    flex-shrink: 0;
+    }
+
+.texto2 {
+    flex: 1;
+    margin-left:40px;
+}
+
+.texto2 h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto2 p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/*CSS DE NOVEDADES*/
+
+#novedades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.contenedor-novedades {
+  position: relative;
+  width: 60%;
+}
+
+.contenedor-novedades img {
+  width: 100%;
+  height: 400px;
+  height: auto;
+  display: block;
+}
+
+.texto-sobre-imagen {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 1rem;
+  max-width: 90%;
+}
+
+#noticias {
+  flex-direction: column; 
+  padding: 20px;
+}
+
+.contenedor-noticias {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border-style: dotted;
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(5,34,55,255);
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contenedor-noticias img {
+  width: auto;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.contenido-noticia {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+.contenedor-noticias h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.contenedor-noticias p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/*CSS DE CURSOS*/
+
+#cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 30px;
+  padding: 40px;
+}
+
+.contenedor-cursos {
+  background-color: #0f1b2db5;
+  color: #fff;
+  width: 300px;
+  padding: 20px;
+  border-color: rgb(255, 255, 255);
+  border-style: double;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Imagen del curso */
+.contenedor-cursos img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 15px 0;    
+}
+
+/* Título del curso */
+.contenedor-cursos h3 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0px;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+/* Texto del curso */
+.contenedor-cursos p {
+  font-size: 0.95rem;
+  margin: 0;
+   background-color: white;
+  color: black;
+}
+
+/*CSS DE EVENTOS*/
+
+#detalle-evento {
+  flex-direction: column; 
+  padding: 20px;
+}
+
+.contenedor-evento {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border-style: groove;
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(5,34,55,255);
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contenedor-evento img {
+  width: 500px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border-style: groove;
+}
+
+.contenido-evento {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+.contenedor-evento h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.contenedor-evento p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+    .contenedor-calendario {
+      max-width: 600px;
+      width: 100%;
+      background: white;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .calendario-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .calendario-header button {
+      padding: 5px 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: not-allowed;
+    }
+    .calendario-header span {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      width: 14.28%;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #e0f0f0;
+    }
+    td:hover {
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    .resaltado {
+      background-color: #d1f0ec;
+    }
+
+    /*CSS CONTACTO*/
+
+    .contacto {
+      background-image: url(../assets/img/fondo-contacto.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 79vh; /*Aprox lo puse así para que quede la imagen en un tamaño lindo*/
+      padding: 20px;
+    }
+
+    .contacto h1{
+      color: white;
+      margin-bottom: 100px;
+    }
+
+    .formulario-contacto {
+      max-width: 900px;
+      margin: auto;
+      background-color: #f3f6f8;
+      border: 1px solid #b8c0c8;
+      padding: 30px;
+      display: flex;
+      gap: 40px;
+    }
+    .formulario-contacto div {
+      flex: 1;
+    }
+    .formulario-contacto label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .formulario-contacto input[type="text"],
+    .formulario-contacto input[type="email"],
+    .formulario-contacto textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .formulario-contacto textarea {
+      height: 100px;
+      resize: none;
+    }
+    .formulario-contacto .boton-enviar {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #3a4b5c;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .formulario-contacto .radio-group label {
+      margin-right: 15px;
+    }

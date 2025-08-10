@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/img/icono_truth.ico" type="image/x-icon">
+  <title>Truth | Contacto</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://kit.fontawesome.com/a223111b53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="../assets/img/logo_header.png" alt="Logo Truth" id="logo">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./novedades.html">Novedades</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./eventos.html">Eventos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="contacto">
+      <h1>CONTACTO</h1>
+
+      <form class="formulario-contacto">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre">
+
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido">
+
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" name="telefono">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+
+          <button type="submit" class="boton-enviar">Enviar</button>
+        </div>
+
+        <div>
+          <label>Seleccione la opción correspondiente</label>
+          <div class="radio-group">
+            <label><input type="radio" name="tipo" value="empresa" checked> Empresa</label><br>
+            <label><input type="radio" name="tipo" value="particular"> Particular</label><br>
+            <label><input type="radio" name="tipo" value="cliente"> Cliente</label>
+          </div>
+
+          <label for="comentario">Comentario</label>
+          <textarea id="comentario" name="comentario"></textarea>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+       <nav class="social">
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i>INSTAGRAM</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i>FACEBOOK</a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i>EMAIL</a></li>
+        </ul>
+      </nav>
+      <div class="subscribirse">
+        <p>SUBSCRIBITE</p>
+        <form>
+          <input type="text">
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
