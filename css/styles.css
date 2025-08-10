@@ -15,6 +15,39 @@ html, body {
 }
 
 /*CSS HEADER Y FOOTER*/
+
+#header .container { padding-top: 6px; padding-bottom: 6px; }
+
+.navbar-toggler { padding: 0.2rem 0.4rem; margin-left: 0.25rem; border: none; }
+
+.offcanvas.offcanvas-start {
+  width: 220px;
+  max-width: 85vw;
+}
+
+.offcanvas .nav-link {
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.offcanvas .nav-link:hover { background: rgba(255,255,255,0.06); color: #fff; }
+
+.nav-icon { font-size: 1.05rem; opacity: 0.95; }
+
+.navbar .nav-link { color: #fff; background: rgba(255,255,255,0.95); color: #000; border-radius: 6px; padding: 0.35rem 0.6rem; font-weight: 500; }
+
+@media (max-width: 420px) {
+  .offcanvas.offcanvas-start { width: 85vw; }
+  #logo { max-height: 34px; }
+}
+
+
 #header, #footer{
   background-color:rgba(5,34,55,255);
 }
@@ -193,24 +226,20 @@ textarea {
   resize: none;
 }
 
-main {
-  padding-top: 70px; /* espacio para header en desktop */
-  padding-bottom: 100px; /* espacio para footer en desktop */
-}
-
 @media (max-width: 767.98px) {
   .formulario-contacto {
     padding: 20px !important;
   }
 
   iframe {
-    width: 100% !important;
-    max-width: 600px;
     height: 250px !important;
   }
 
-  main {
+   main {
     padding-top: 90px; /* más espacio en móviles */
-    padding-bottom: 120px; /* más espacio para el footer en móvil */
   }
+}
+
+.navbar-toggler-custom {
+  background-color: #1c85e0;
 }
