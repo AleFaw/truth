@@ -223,6 +223,7 @@ th, td {
 
 .formulario-contacto {
   max-width:900px;
+  background-color: rgba(255,255,255,0.55);
 }
 
 .formulario-contacto label {
