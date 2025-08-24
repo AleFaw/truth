@@ -1,0 +1,27 @@
+@use './variables' as *;
+@use './placeholders' as *;
+@use './mixins' as *;
+
+section {
+  > .position-relative {
+    img { @extend %rounded-20; }
+    div {
+      border-radius: 20px 20px 0 0;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+#quienes_somos, #vision {
+  background-color: $color-dark;
+  color: $white;
+  border-radius: 8px;
+
+  @include bp(sm) {
+    text-align: center;
+
+    img {
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Truth | Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://kit.fontawesome.com/a223111b53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+  <header class="text-white sticky-top" id="header">
+    <div class="container d-flex align-items-center py-2">
+      <a href="../index.html" class="d-flex align-items-center me-2">
+        <img src="../assets/img/logo_header.png" alt="Logo Truth" id="logo" />
+      </a>
+
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="white" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <line x1="3" y1="7" x2="21" y2="7" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="17" x2="21" y2="17" />
+        </svg>
+      </button>
+
+      <div class="d-none d-lg-flex ms-auto align-items-center">
+        <nav class="navbar navbar-dark">
+          <ul class="navbar-nav d-flex flex-row align-items-center gap-2">
+            <li><a class="nav-link small px-2 py-1" href="../index.html">Inicio</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./novedades.html">Novedades</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./cursos.html">Cursos</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./eventos.html">Eventos</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Menú</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body" style="background-color:rgba(5,34,55,255);">
+      <nav class="nav flex-column gap-2">
+        <a class="nav-link sidebar-link" href="../index.html"><span class="nav-icon">🏠</span> Inicio</a>
+        <a class="nav-link sidebar-link" href="./novedades.html"><span class="nav-icon">✨</span> Novedades</a>
+        <a class="nav-link sidebar-link" href="./cursos.html"><span class="nav-icon">📚</span> Cursos</a>
+        <a class="nav-link sidebar-link" href="./eventos.html"><span class="nav-icon">📅</span> Eventos</a>
+        <a class="nav-link sidebar-link" href="./contacto.html"><span class="nav-icon">✉️</span> Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="contacto flex-grow-1 d-flex flex-column justify-content-center py-5">
+    <div class="container">
+      <h1 class="text-white text-center mb-5">CONTACTO</h1>
+
+      <form class="formulario-contacto p-4 rounded-4 shadow mx-auto">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <label for="nombre" class="form-label fw-bold">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required />
+
+            <label for="apellido" class="form-label fw-bold mt-3">Apellido</label>
+            <input type="text" id="apellido" name="apellido" class="form-control" required />
+
+            <label for="telefono" class="form-label fw-bold mt-3">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" class="form-control" />
+
+            <label for="email" class="form-label fw-bold mt-3">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required />
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-bold">Seleccione la opción correspondiente</label>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipo" id="empresa" value="empresa" checked />
+                <label class="form-check-label" for="empresa">Empresa</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipo" id="particular" value="particular" />
+                <label class="form-check-label" for="particular">Particular</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipo" id="cliente" value="cliente" />
+                <label class="form-check-label" for="cliente">Cliente</label>
+              </div>
+            </div>
+
+            <label for="comentario" class="form-label fw-bold">Comentario</label>
+            <textarea id="comentario" name="comentario" class="form-control" rows="7"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4 w-30">Enviar</button>
+      </form>
+    </div>
+
+    <section class="mt-12 container" style="text-align: center; margin-top:30px;">
+      <h2 class="text-white mb-3">Ubicación de las oficinas de TRUTH</h2>
+      <!-- iframe con el mapa -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.6492389653994!2d-118.27325748478238!3d34.04419628060169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6400b615d2f%3A0x2d28dbdbf3f1f6f8!2sRiot%20Games!5e0!3m2!1ses-419!2sar!4v1691742698409!5m2!1ses-419!2sar"
+        width="100%"
+        height="200"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-white mt-auto py-3" id="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
+          <li class="mx-2"><a href="#" class="text-white"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>
+          <li class="mx-2"><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2"></i>Facebook</a></li>
+          <li class="mx-2"><a href="#" class="text-white"><i class="fa-solid fa-envelope me-2"></i>Email</a></li>
+        </ul>
+      </div>
+      <div class="subscribirse text-center text-md-end">
+        <p>Suscribite</p>
+        <form class="d-flex justify-content-center justify-content-md-end" role="search">
+          <input type="email" class="form-control form-control-sm me-2" placeholder="Tu email" required />
+          <button class="btn btn-light btn-sm" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

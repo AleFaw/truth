@@ -1,0 +1,118 @@
+@use './variables' as *;
+@use './placeholders' as *;
+@use './mixins' as *;
+
+.offcanvas {
+  &.offcanvas-start {
+    width: 220px;
+    max-width: 85vw;
+
+    @include bp(xs) {
+      width: 85vw;
+    }
+  }
+
+  .nav-link {
+    color: $white;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    @include center-flex(row, flex-start, center);
+    gap: 0.6rem;
+    font-size: 0.95rem;
+
+    &:hover {
+      background: rgba(255,255,255,0.06);
+      color: $white;
+    }
+  }
+}
+
+.contenedor-cursos {
+  @extend %card;
+  background-color: $card-dark;
+  color: $white;
+  border: double 2px $white;
+  border-radius: 10px;
+  text-align: center;
+
+  img { border-radius: 8px; margin: 15px 0; max-width: 100%; height: auto; }
+
+  h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 8px;
+    background-color: $white;
+    color: black;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  p {
+    font-size: 0.95rem;
+    margin: 0;
+    background-color: $white;
+    color: black;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+  }
+}
+
+.contenedor-calendario {
+  @extend %card;
+  color: black;
+  max-width: 600px;
+  width: 100%;
+  background: $white;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.contenedor-evento {
+  max-width: 900px;
+  width: 100%;
+  @extend %rounded-20;
+  background-color: $color-dark;
+  color: $white;
+  object-fit: cover;
+
+  h3 { font-size: 1.8rem; max-width: 900px; }
+  p { font-size: 1rem; }
+
+  @include bp(sm) {
+    img { height: auto !important; }
+    table {
+      th, td {
+        padding: 6px 4px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+/* Noticias (componente) */
+#noticias {
+  .d-flex {
+    border-style: dotted;
+    border-width: 2px;
+    border-radius: 20px;
+  }
+
+  img {
+    max-height: 170px;
+    @extend %rounded-20;
+    object-fit: cover;
+    display: block;
+  }
+
+  @include bp(sm) {
+    .d-flex.p-3 { padding: 0.75rem; }
+    .noticia-img { max-width: 300px; }
+  }
+}
+
+.calendario-header {
+  button[disabled] { cursor: not-allowed; }
+}

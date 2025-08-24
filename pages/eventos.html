@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Truth | Eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://kit.fontawesome.com/a223111b53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="text-white sticky-top" id="header">
+    <div class="container d-flex align-items-center py-2">
+      <a href="../index.html" class="d-flex align-items-center me-2">
+        <img src="../assets/img/logo_header.png" alt="Logo Truth" id="logo" />
+      </a>
+
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="white" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <line x1="3" y1="7" x2="21" y2="7" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="17" x2="21" y2="17" />
+        </svg>
+      </button>
+
+      <div class="d-none d-lg-flex ms-auto align-items-center">
+        <nav class="navbar navbar-dark">
+          <ul class="navbar-nav d-flex flex-row align-items-center gap-2">
+            <li><a class="nav-link small px-2 py-1" href="../index.html">Inicio</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./novedades.html">Novedades</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./cursos.html">Cursos</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./eventos.html">Eventos</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Menú</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body" style="background-color:rgba(5,34,55,255);">
+      <nav class="nav flex-column gap-2">
+        <a class="nav-link sidebar-link" href="../index.html"><span class="nav-icon">🏠</span> Inicio</a>
+        <a class="nav-link sidebar-link" href="./novedades.html"><span class="nav-icon">✨</span> Novedades</a>
+        <a class="nav-link sidebar-link" href="./cursos.html"><span class="nav-icon">📚</span> Cursos</a>
+        <a class="nav-link sidebar-link" href="./eventos.html"><span class="nav-icon">📅</span> Eventos</a>
+        <a class="nav-link sidebar-link" href="./contacto.html"><span class="nav-icon">✉️</span> Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="container my-5 flex-grow-1">
+
+    <h1 class="text-center mb-5">EVENTOS</h1>
+
+    <!-- Calendario -->
+    <section class="mb-5">
+      <div class="contenedor-calendario mx-auto p-4 rounded-3 bg-white text-dark shadow">
+        <div class="calendario-header d-flex justify-content-between align-items-center mb-3">
+          <button disabled class="btn btn-primary">&lt;</button>
+          <span class="fw-bold fs-5">Julio 2025</span>
+          <button disabled class="btn btn-primary">&gt;</button>
+        </div>
+        <table class="table table-bordered text-center mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+              <th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+            </tr>
+            <tr>
+              <td>7</td><td class="resaltado">8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+            </tr>
+            <tr>
+              <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+            </tr>
+            <tr>
+              <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+            </tr>
+            <tr>
+              <td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Detalle evento -->
+    <section class="mb-5">
+      <article class="contenedor-evento card text-white mx-auto p-3 rounded-4 shadow">
+        <div class="row g-3 align-items-center">
+          <div class="col-12 col-md-5">
+            <img src="../assets/img/evento.jpg" alt="Imagen de evento" class="img-fluid rounded-3 border border-light"/>
+          </div>
+          <div class="col-12 col-md-7 d-flex flex-column justify-content-start">
+            <h3 class="mb-3">NOMBRE DEL EVENTO</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sapiente, similique
+              voluptatum obcaecati corporis sed doloremque distinctio, iusto tenetur nihil nobis,
+              expedita rem dolores impedit. Tenetur voluptatem illum nemo suscipit!
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-white mt-auto py-3" id="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
+          <li class="mx-2"><a href="#" class="text-white"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>
+          <li class="mx-2"><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2"></i>Facebook</a></li>
+          <li class="mx-2"><a href="#" class="text-white"><i class="fa-solid fa-envelope me-2"></i>Email</a></li>
+        </ul>
+      </div>
+      <div class="subscribirse text-center text-md-end">
+        <p>Suscribite</p>
+        <form class="d-flex justify-content-center justify-content-md-end" role="search">
+          <input type="email" class="form-control form-control-sm me-2" placeholder="Tu email" required />
+          <button class="btn btn-light btn-sm" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

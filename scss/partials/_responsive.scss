@@ -1,0 +1,16 @@
+@use './variables' as *;
+@use './placeholders' as *;
+@use './mixins' as *;
+
+@include bp(xs) {
+  #logo { max-height: $logo-max-height-mobile; }
+}
+
+/* Contacto small tweaks */
+@include bp(sm) {
+  .contacto {
+    .formulario-contacto { padding: 20px !important; }
+    iframe { height: 250px !important; }
+    main { padding-top: 90px; }
+  }
+}

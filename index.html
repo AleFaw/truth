@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/icono_truth.ico" type="image/x-icon">
+  <title>Truth | Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://kit.fontawesome.com/a223111b53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="text-white sticky-top" id="header">
+    <div class="container d-flex align-items-center py-2">
+      <a href="./index.html" class="d-flex align-items-center me-2">
+        <img src="./assets/img/logo_header.png" alt="Logo Truth" id="logo" />
+      </a>
+
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="white" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <line x1="3" y1="7" x2="21" y2="7" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="17" x2="21" y2="17" />
+        </svg>
+      </button>
+
+      <div class="d-none d-lg-flex ms-auto align-items-center">
+        <nav class="navbar navbar-dark">
+          <ul class="navbar-nav d-flex flex-row align-items-center gap-2">
+            <li><a class="nav-link small px-2 py-1" href="./index.html">Inicio</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./pages/novedades.html">Novedades</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./pages/cursos.html">Cursos</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./pages/eventos.html">Eventos</a></li>
+            <li><a class="nav-link small px-2 py-1" href="./pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Menú</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body" style="background-color:rgba(5,34,55,255);">
+      <nav class="nav flex-column gap-2">
+        <a class="nav-link sidebar-link" href="./index.html"><span class="nav-icon">🏠</span> Inicio</a>
+        <a class="nav-link sidebar-link" href="./pages/novedades.html"><span class="nav-icon">✨</span> Novedades</a>
+        <a class="nav-link sidebar-link" href="./pages/cursos.html"><span class="nav-icon">📚</span> Cursos</a>
+        <a class="nav-link sidebar-link" href="./pages/eventos.html"><span class="nav-icon">📅</span> Eventos</a>
+        <a class="nav-link sidebar-link" href="./pages/contacto.html"><span class="nav-icon">✉️</span> Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container my-4">
+    <h1 class="text-center mb-4">TRUTH</h1>
+
+    <section id="quienes_somos" class="row align-items-center p-4">
+      <div class="col-md-5 text-center">
+        <img src="./assets/img/quienes_somos.png" alt="Imagen de quienes somos" class="img-fluid">
+      </div>
+      <div class="col-md-7">
+        <h3>¿Quiénes somos?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus perspiciatis repudiandae quisquam id similique unde fugit eius nemo sunt.</p>
+      </div>
+    </section>
+
+    <section id="vision" class="row align-items-center p-4 mt-4">
+      <div class="col-md-7 order-2 order-md-1">
+        <h3>Nuestra visión</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente, similique voluptatum obcaecati corporis sed doloremque distinctio.</p>
+      </div>
+      <div class="col-md-5 text-center order-1 order-md-2">
+        <img src="./assets/img/vision.png" alt="Imagen sobre nuestra visión como empresa" class="img-fluid">
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-white mt-auto py-3" id="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
+          <li class="mx-2"><a href="#" class="text-white"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>
+          <li class="mx-2"><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2"></i>Facebook</a></li>
+          <li class="mx-2"><a href="#" class="text-white"><i class="fa-solid fa-envelope me-2"></i>Email</a></li>
+        </ul>
+      </div>
+      <div class="subscribirse text-center text-md-end">
+        <p>Suscribite</p>
+        <form class="d-flex justify-content-center justify-content-md-end" role="search">
+          <input type="email" class="form-control form-control-sm me-2" placeholder="Tu email" required />
+          <button class="btn btn-light btn-sm" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
