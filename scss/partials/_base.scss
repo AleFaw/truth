@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: $font-family-base;
+  background-color: $bg-page;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+a, button {
+  &:focus { outline: 3px solid rgba(28,133,224,0.3); outline-offset: 2px; }
+}

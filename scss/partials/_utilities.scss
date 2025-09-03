@@ -1,0 +1,38 @@
+@use './variables' as *;
+
+.resaltado { background-color: #d1f0ec !important; }
+
+/* tablas base */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  th, td {
+    width: 16.66%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+  }
+}
+
+/* Contacto (se deja aquí para facilitar overrides en responsive) */
+.contacto {
+  background-image: url(#{$contact-bg});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 79vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h1 { color: $white; margin-top: 0; }
+
+  .formulario-contacto {
+    max-width: 900px;
+    background-color: rgba(255,255,255,0.55);
+    label { font-weight: 600; }
+    textarea { resize: none; }
+  }
+}
