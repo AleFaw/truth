@@ -269,6 +269,10 @@ table th, table td {
 }
 .card-flip {
   perspective: 1000px;
+  cursor: pointer;
+}
+.card-flip:hover {
+  animation: bounce 0.3s ease-in-out;
 }
 
 .card-inner {
@@ -291,17 +295,65 @@ table th, table td {
   backface-visibility: hidden;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card-front {
   background: white;
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-front img {
+  border-bottom: 1px solid #ddd;
 }
 
 .card-back {
   background: #052237;
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto button {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+.formulario-contacto button:hover {
+  transform: scale(1.05);
+}
+
+.contact-links a {
+  color: #00ffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.contact-links a:hover {
+  color: #ffcc00;
 }
 
 .card-flip {

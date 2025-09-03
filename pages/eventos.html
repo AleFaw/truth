@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Truth | Eventos</title>
+  <title>Truth | Eventos de Desarrollo Web y Tecnología</title>
+  <meta name="description" content="Calendario de eventos, talleres y actividades de Truth. Descubre nuestros cursos, novedades y próximos eventos en desarrollo web y tecnología." />
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <link rel="stylesheet" href="../css/styles.css" />
   <script src="https://kit.fontawesome.com/a223111b53.js" crossorigin="anonymous"></script>
 </head>
@@ -14,7 +20,7 @@
   <header class="text-white sticky-top" id="header">
     <div class="container d-flex align-items-center py-2">
       <a href="../index.html" class="d-flex align-items-center me-2">
-        <img src="../assets/img/logo_header.png" alt="Logo Truth" id="logo" />
+        <img src="../assets/img/logo_header.png" alt="Logo de Truth, escuela de desarrollo web y tecnología" id="logo" class="animate__animated animate__fadeInDown"/>
       </a>
 
       <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
@@ -41,6 +47,7 @@
     </div>
   </header>
 
+  <!-- Sidebar -->
   <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Menú</h5>
@@ -51,7 +58,7 @@
         <a class="nav-link sidebar-link" href="../index.html"><span class="nav-icon">🏠</span> Inicio</a>
         <a class="nav-link sidebar-link" href="./novedades.html"><span class="nav-icon">✨</span> Novedades</a>
         <a class="nav-link sidebar-link" href="./cursos.html"><span class="nav-icon">📚</span> Cursos</a>
-        <a class="nav-link sidebar-link" href="./eventos.html"><span class="nav-icon">📅</span> Eventos</a>
+        <a class="nav-link sidebar-link active" href="./eventos.html"><span class="nav-icon">📅</span> Eventos</a>
         <a class="nav-link sidebar-link" href="./contacto.html"><span class="nav-icon">✉️</span> Contacto</a>
       </nav>
     </div>
@@ -60,10 +67,10 @@
   <!-- MAIN -->
   <main class="container my-5 flex-grow-1">
 
-    <h1 class="text-center mb-5">EVENTOS</h1>
+    <h1 class="text-center mb-5 animate__animated animate__fadeInDown">Eventos</h1>
 
     <!-- Calendario -->
-    <section class="mb-5">
+    <section class="mb-5 animate__animated animate__fadeInUp">
       <div class="contenedor-calendario mx-auto p-4 rounded-3 bg-white text-dark shadow">
         <div class="calendario-header d-flex justify-content-between align-items-center mb-3">
           <button disabled class="btn btn-primary">&lt;</button>
@@ -103,14 +110,14 @@
     </section>
 
     <!-- Detalle evento -->
-    <section class="mb-5">
+    <section class="mb-5 animate__animated animate__fadeInUp animate__delay-1s">
       <article class="contenedor-evento card text-white mx-auto p-3 rounded-4 shadow">
         <div class="row g-3 align-items-center">
           <div class="col-12 col-md-5">
-            <img src="../assets/img/evento.jpg" alt="Imagen de evento" class="img-fluid rounded-3 border border-light"/>
+            <img src="../assets/img/evento.jpg" alt="Participantes disfrutando de un evento de desarrollo web en Truth" class="img-fluid rounded-3 border border-light"/>
           </div>
           <div class="col-12 col-md-7 d-flex flex-column justify-content-start">
-            <h3 class="mb-3">NOMBRE DEL EVENTO</h3>
+            <h2 class="mb-3">Nombre del Evento</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sapiente, similique
               voluptatum obcaecati corporis sed doloremque distinctio, iusto tenetur nihil nobis,
@@ -130,7 +137,7 @@
         <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
           <li class="mx-2"><a href="#" class="text-white"><i class="fa-brands fa-instagram me-2"></i>Instagram</a></li>
           <li class="mx-2"><a href="#" class="text-white"><i class="fa-brands fa-facebook me-2"></i>Facebook</a></li>
-          <li class="mx-2"><a href="#" class="text-white"><i class="fa-solid fa-envelope me-2"></i>Email</a></li>
+          <li class="mx-2"><a href="mailto:contacto@alejotarrio.com.ar" class="text-white"><i class="fa-solid fa-envelope me-2"></i>Email</a></li>
         </ul>
       </div>
       <div class="subscribirse text-center text-md-end">
@@ -143,6 +150,7 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

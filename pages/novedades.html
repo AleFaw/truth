@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../assets/img/icono_truth.ico" type="image/x-icon">
-  <title>Truth | Novedades</title>
+  <title>Truth | Novedades - Noticias y Actualizaciones</title>
+  <meta name="description" content="Enterate de las últimas novedades de Truth: noticias, actualizaciones y todo lo relacionado a nuestros cursos y eventos.">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <link rel="stylesheet" href="../css/styles.css">
+
   <script src="https://kit.fontawesome.com/a223111b53.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,7 +21,7 @@
   <header class="text-white sticky-top" id="header">
     <div class="container d-flex align-items-center py-2">
       <a href="../index.html" class="d-flex align-items-center me-2">
-        <img src="../assets/img/logo_header.png" alt="Logo Truth" id="logo" />
+        <img src="../assets/img/logo_header.png" alt="Logo de Truth" id="logo" class="animate__animated animate__fadeInDown"/>
       </a>
 
       <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
@@ -42,6 +48,7 @@
     </div>
   </header>
 
+  <!-- Sidebar -->
   <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Menú</h5>
@@ -58,55 +65,57 @@
     </div>
   </div>
 
+  <!-- Main -->
   <main class="container my-4">
 
-    <h1 class="text-center mb-4">NOVEDADES</h1>
+    <h1 class="text-center mb-4 animate__animated animate__fadeInDown">NOVEDADES</h1>
 
+    <!-- Imagen destacada -->
     <section class="mb-5">
-      <div class="position-relative rounded overflow-hidden">
-        <img src="../assets/img/novedades_valorant.png" class="w-100 img-fluid" alt="Novedades">
+      <div class="position-relative rounded overflow-hidden animate__animated animate__zoomIn">
+        <img src="../assets/img/novedades_valorant.png" class="w-100 img-fluid" alt="Novedades sobre Valorant">
         <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-75 text-white p-2 rounded">
           Valorant - Nueva rotación de mapas
         </div>
       </div>
     </section>
 
+    <!-- Noticias -->
     <section id="noticias">
-  <div class="row g-4">
+      <div class="row g-4">
 
-    <div class="col-12">
-      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-3 p-3 border border-white rounded bg-dark text-white">
-        <img src="../assets/img/noticia1.png" alt="Noticia 1" class="img-fluid rounded mx-auto d-block me-md-3 noticia-img">
-        <div>
-          <h3>Noticia 1</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente, similique voluptatum obcaecati corporis sed doloremque distinctio...</p>
+        <div class="col-12">
+          <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-3 p-3 border border-white rounded bg-dark text-white animate__animated animate__fadeInUp">
+            <img src="../assets/img/noticia1.png" alt="Imagen ilustrativa de la noticia 1" class="img-fluid rounded mx-auto d-block me-md-3 noticia-img">
+            <div>
+              <h2>Noticia 1</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente, similique voluptatum obcaecati corporis sed doloremque distinctio...</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-12">
-      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-3 p-3 border border-white rounded bg-dark text-white">
-        <img src="../assets/img/noticia2.jpg" alt="Noticia 2" class="img-fluid rounded mx-auto d-block me-md-3 noticia-img">
-        <div>
-          <h3>Noticia 2</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente, similique voluptatum obcaecati corporis sed doloremque distinctio...</p>
+        <div class="col-12">
+          <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-3 p-3 border border-white rounded bg-dark text-white animate__animated animate__fadeInUp">
+            <img src="../assets/img/noticia2.jpg" alt="Imagen ilustrativa de la noticia 2" class="img-fluid rounded mx-auto d-block me-md-3 noticia-img">
+            <div>
+              <h2>Noticia 2</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente, similique voluptatum obcaecati corporis sed doloremque distinctio...</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-12">
-      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-3 p-3 border border-white rounded bg-dark text-white">
-        <img src="../assets/img/noticia3.png" alt="Noticia 3" class="img-fluid rounded mx-auto d-block me-md-3 noticia-img">
-        <div>
-          <h3>Noticia 3</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente, similique voluptatum obcaecati corporis sed doloremque distinctio...</p>
+        <div class="col-12">
+          <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-3 p-3 border border-white rounded bg-dark text-white animate__animated animate__fadeInUp">
+            <img src="../assets/img/noticia3.png" alt="Imagen ilustrativa de la noticia 3" class="img-fluid rounded mx-auto d-block me-md-3 noticia-img">
+            <div>
+              <h2>Noticia 3</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente, similique voluptatum obcaecati corporis sed doloremque distinctio...</p>
+            </div>
+          </div>
         </div>
+
       </div>
-    </div>
-
-  </div>
-</section>
-
+    </section>
 
   </main>
 
@@ -130,6 +139,7 @@
     </div>
   </footer>
 
+  <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
