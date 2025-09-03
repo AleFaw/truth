@@ -16,12 +16,13 @@ Truth es una plataforma dedicada al mundo del gaming, enterate de las ultimas no
 ![Screenshot](./assets/img/mobile.png)
 ---
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 
-Alejo Tarrio | Desarrollador Web
-🌍 alejotarrio.com.ar
-📱 +54 1123230811
-📧 contacto@alejotarrio.com.ar
+**Alejo Tarrio** — Desarrollador Web  
+
+[![🌍 Web](https://img.shields.io/badge/Web-alejotarrio.com.ar-blue?style=flat-square)](https://alejotarrio.com.ar)  
+[![📱 WhatsApp](https://img.shields.io/badge/WhatsApp-+54%201123230811-green?style=flat-square)](https://wa.me/541123230811)  
+[![📧 Email](https://img.shields.io/badge/Email-contacto%40alejotarrio.com.ar-red?style=flat-square)](mailto:contacto@alejotarrio.com.ar)  
 
 ---
 
