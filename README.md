@@ -14,18 +14,20 @@ Truth es una plataforma dedicada al mundo del gaming, enterate de las ultimas no
 
 ## 📷 DISFRUTALO EN SU VERSIÓN MOBILE
 ![Screenshot](./assets/img/mobile.png)
+
 ---
 
 ## 👨‍💻 Autor
 
 **Alejo Tarrio** — Desarrollador Web  
 
-[![🌍 Web](https://img.shields.io/badge/Web-alejotarrio.com.ar-blue?style=flat-square)](https://alejotarrio.com.ar)  
-[![📱 WhatsApp](https://img.shields.io/badge/WhatsApp-+54%201123230811-green?style=flat-square)](https://wa.me/541123230811)  
-[![📧 Email](https://img.shields.io/badge/Email-contacto%40alejotarrio.com.ar-red?style=flat-square)](mailto:contacto@alejotarrio.com.ar)  
+🌍 [alejotarrio.com.ar](https://alejotarrio.com.ar)  
+📱 [WhatsApp](https://wa.me/541123230811)  
+📧 [contacto@alejotarrio.com.ar](mailto:contacto@alejotarrio.com.ar)  
+
 
 ---
 
-![GitHub repo size](https://img.shields.io/github/repo-size/AleFaw/truth)
-![GitHub last commit](https://img.shields.io/github/last-commit/AleFaw/truth)
-![GitHub issues](https://img.shields.io/github/issues/AleFaw/truth)
+![GitHub tamaño](https://img.shields.io/github/repo-size/AleFaw/truth)
+![GitHub Ultimo commit](https://img.shields.io/github/last-commit/AleFaw/truth)
+![GitHub errores](https://img.shields.io/github/issues/AleFaw/truth)
