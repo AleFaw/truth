@@ -63,7 +63,7 @@
     <div class="container">
       <h1 class="text-white text-center mb-5 animate__animated animate__fadeInDown">CONTACTO</h1>
 
-      <form class="formulario-contacto p-4 rounded-4 shadow mx-auto animate__animated animate__fadeInUp">
+      <form class="formulario-contacto p-4 rounded-4 shadow mx-auto animate__animated animate__fadeInUp" name="contacto" method="POST" netlify>
         <div class="row g-4">
           <div class="col-md-6">
             <label for="nombre" class="form-label fw-bold">Nombre</label>
@@ -135,7 +135,7 @@
       </div>
       <div class="subscribirse text-center text-md-end">
         <p>Suscribite</p>
-        <form class="d-flex justify-content-center justify-content-md-end" role="search">
+        <form class="d-flex justify-content-center justify-content-md-end" role="search" name="newsletter" method="POST" netlify>
           <input type="email" class="form-control form-control-sm me-2" placeholder="Tu email" required />
           <button class="btn btn-light btn-sm" type="submit">Enviar</button>
         </form>

@@ -1,6 +1,11 @@
-# 📌 TRUTH
+# 🎮 TRUTH
 
 Truth es una plataforma dedicada al mundo del gaming, enterate de las ultimas novedades en torneos, estrenos, cursos y de más en un solo lugar.
+
+---
+
+# 📌 DESPLIEGUE
+- 🌍 [Link Netlify](https://golden-alpaca-beb05c.netlify.app) 
 
 ---
 
